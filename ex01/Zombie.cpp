@@ -5,22 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 22:53:59 by crebelo-          #+#    #+#             */
-/*   Updated: 2024/06/25 11:09:15 by crebelo-         ###   ########.fr       */
+/*   Created: 2024/06/25 10:56:42 by crebelo-          #+#    #+#             */
+/*   Updated: 2024/06/25 16:24:02 by crebelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name){
-	this->m_name = name;
-	announce();
+Zombie::Zombie(){
 }
 
 Zombie::~Zombie(){
-	std::cout << RED << "The zombie " << this->m_name << " has been destroyed" << RESET << std::endl;
+	std::cout << "The Zombie " << this->m_name << " has been destroyed\n";
 }
 
-void    Zombie::announce(void){
-	std::cout << CYAN << this->m_name << ": " << "BraiiiiiiinnnzzzZ...\n" << RESET;
+void	Zombie::announce(){
+	std::cout << this->m_name << ": BraiiiiiiinnnzzzZ...\n";
+}
+
+void	Zombie::setName(std::string name){
+	this->m_name = name;
 }
