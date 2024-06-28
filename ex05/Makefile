@@ -29,7 +29,7 @@ $(OBJ): %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
-	@echo "$(GREEN) Compiling ex04 ... "
+	@echo "$(GREEN) Compiling annoying Harl ... "
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 	@echo "$(GREEN) Done! "
 

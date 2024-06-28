@@ -29,12 +29,6 @@ int main()
 		Weapon club = Weapon("crude spiked club");
 		HumanA bob("Bob", club);
 		bob.attack();
-
-		// now changing the value of the weapon from club
-		// since the HumamA is getting his weapon through a reference to the club object
-		// when we change the club object through setType, the value of the weapon in the
-		// HumanA object is also changed
-		
 		club.setType("some other type of club");
 		bob.attack();
 	}

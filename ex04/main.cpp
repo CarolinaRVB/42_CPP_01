@@ -28,12 +28,16 @@ int main(int argc, char **argv)
 		std::cout << "Error: invalid arguments\n";
 		return 1;
 	}
+	
 	// opening the file:
 	std::ifstream	inFile((std::string(argv[1]).c_str()));
-	
 	if (!inFile){
 		std::cout << "Issue with opening the file\n";
 		return 1;
+	}
+	if (inFile.peek() == EOF){
+		std::cout << "Issue with usage of file: empty file\n";
+		return 1;		
 	}
 	
 	// capture what's in the file through rdbuf stored in a stringstream var
@@ -62,12 +66,7 @@ int main(int argc, char **argv)
 	// creates and defines the output to a file
 	std::string outfile = std::string(argv[1]) + ".replace";
 	std::ofstream	file(outfile.c_str());
+	file << newString;
 
-	if (newString.empty()){
-		std::cout << "empty\n";
-		file << contents;
-	}
-	else
-		file << newString;
 	file.close();
 }

@@ -12,14 +12,14 @@
 
 #include "Harl.hpp"
 
-int main(int argc, char **argv){
+int main(){
+	
 	Harl    harl;
 
-	if (argc != 2){
-		std::cout << "Wrong arguments, this is Harl's responde:\n";
-		harl.complain("error");
-		return (1);
-	}
-	harl.complain(argv[1]);
+	harl.complain("DEBUG");
+	harl.complain("INFO");
+	harl.complain("WARNING");
+	harl.complain("ERROR");
+
 	return (0);
 }

@@ -37,7 +37,7 @@ void	Harl::error(void){
 
 void	Harl::complain(std::string level){
 	
-	std::string	levels[] = {"debug", "info", "warning", "error"};
+	std::string	levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 	void	(Harl::*fptr[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	
@@ -46,7 +46,5 @@ void	Harl::complain(std::string level){
 			(this->*fptr[i])();
 			return ;
 		}
-	}
-	std::cout << "Weird argument. Harl's response:\n";
-	this->error();  
+	} 
 }

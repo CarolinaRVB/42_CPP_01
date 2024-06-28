@@ -31,7 +31,7 @@ $(OBJ): %.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
-	@echo "$(GREEN) Compiling Brain ... "
+	@echo "$(GREEN) Compiling Humans and Zombies ... "
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 	@echo "$(GREEN) Done! "
 

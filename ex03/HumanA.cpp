@@ -13,12 +13,12 @@
 #include "HumanA.hpp"
 
 HumanA::HumanA(std::string name, Weapon &weapon) : m_name(name), weaponA(weapon) {
-	std::cout << "Human was succesfully initialised with name \"" << name << "\" and weapon \""
+	std::cout << "Human A was succesfully initialised with name \"" << name << "\" and weapon \""
 			<< weaponA.getType() << "\" through the reference to a previously constructed object from the Weapon class\n\n";
 }
 
 HumanA::~HumanA(){
-	std::cout << "Human destroyed\n";	
+	std::cout << "Human A destroyed\n";	
 }
 
 void  HumanA::attack() const{

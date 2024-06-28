@@ -13,12 +13,13 @@
 #include "Zombie.hpp"
 
 int main(void){
+	
 	std::cout << GREEN << "Creating Zombies through STACK allocation\n" << RESET;
 	randomChump("stackZombie");
 	
 	std::cout << GREEN << "\nCreating Zombies through HEAP allocation\n" << RESET;
-	
 	Zombie*	zombie = newZombie("heapZombie");
 	delete zombie;
+
 	return (0);  
 }

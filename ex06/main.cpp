@@ -13,17 +13,10 @@
 #include "Harl.hpp"
 
 int main(int argc, char **argv){
+	
 	Harl    harl;
 
-	std::string	levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	int i = 0;
-	while (i < 4){
-		if (argv[1] == levels[i])
-			break;
-		i++;
-	}
-
-	if (argc != 2 || i >= 4){
+	if (argc != 2){
 		std::cout << "Wrong arguments, this is Harl's response:\n";
 		harl.complain("ERROR");
 		return (1);

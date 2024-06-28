@@ -16,7 +16,7 @@ int main(void){
 	
 	int N = 5;
 	if (N <= 0){
-		std::cout << "tests with invalid N\n";
+		std::cout << "Tests with invalid N\n";
 		return (1);
 	}
 
