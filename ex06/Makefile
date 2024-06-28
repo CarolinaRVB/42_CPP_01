@@ -6,11 +6,11 @@
 #    By: crebelo- <crebelo-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/25 08:55:46 by crebelo-          #+#    #+#              #
-#    Updated: 2024/06/28 09:46:28 by crebelo-         ###   ########.fr        #
+#    Updated: 2024/06/28 09:46:35 by crebelo-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := harl
+NAME := harlFilter
 
 SRC := 	Harl.cpp \
 		main.cpp 
